@@ -1,0 +1,5 @@
+
+
+Esbuild or terser is required for post processing. Install it globally with NPM
+    npm install -g esbuild
+    npm install terser
