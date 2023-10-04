@@ -211,7 +211,7 @@ if __name__ == "__main__":
         print("One has been created for you.")
         print("Please add your packs to config before re-running.")
         with open(config_filepath, "w") as config_file:
-            jstyleson.dump(const.CONFIG_DEFAULT, config_file)
+            jstyleson.dump(const.CONFIG_DEFAULT, config_file, indent=4, ensure_ascii=False)
         sys.exit(-1)
     
     app = QtWidgets.QApplication(sys.argv)
