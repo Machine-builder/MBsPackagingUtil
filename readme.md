@@ -15,9 +15,18 @@ This project uses PyQt5, which means it cannot be sold without proper licensing.
 
 Any files within resources/3rdparty are provided on Qt's website, and have license files available.
 
+## Requirements
+
+This project uses the following modules:
+
+* PyQt5 (For UI)
+* PyQtWebEngine (For MD preview)
+* jstyleson (For handling comments in JSON)
+* pyperclip (For copying to clipboard)
+
 ## Using Config.json
 
-Config.json is where you define pack paths for the packager to list. 
+Config.json is where you define pack paths for the packager to list.
 
 An example pack entry would look like:
 
