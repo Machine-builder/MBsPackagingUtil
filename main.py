@@ -160,6 +160,7 @@ if __name__ == "__main__":
             if not os.path.exists(release_path_pack):
                 os.mkdir(release_path_pack)
             release_path = os.path.join(release_path_pack, version_str)
+            
             try:
                 os.mkdir(release_path)
             except:

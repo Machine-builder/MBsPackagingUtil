@@ -20,15 +20,17 @@ def generate_release_notes(
     elif release_type == 3:
         release_type_text = config["notes"]["type_repackage"]
     
+    headline_text = ""
+    whats_new_text = ""
+    fixes_text = ""
+    other_notes_text = ""
+
     if text_release_headline:
         headline_text = text_release_headline+"\n\n"
-
     if text_whats_new:
         whats_new_text = "### "+config["notes"]["header_whats_new"]+"\n"+text_whats_new+"\n\n"
-    
     if text_fixes:
         fixes_text = "### "+config["notes"]["header_bug_fixes"]+"\n"+text_fixes+"\n\n"
-    
     if text_other_notes:
         other_notes_text = "### "+config["notes"]["header_other_notes"]+"\n"+text_other_notes+"\n\n"
     
